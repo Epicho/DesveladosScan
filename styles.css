@@ -1,5 +1,61 @@
-body{
-    margin: 0;
-    background: greenyellow;
-    text-align: center;
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background: 431D9A;
+    font-family: 'Lora', serif;
+}
+
+header{
+    background-color: #2F324C;
+    height: 66px;
+}
+
+header * {
+    color: white;
+}
+
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+head .logo-text {
+    margin: 4px;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border: 1px solid red;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+   position: absolute;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background: #171926;
+    transition: 0.5s; 
+}
+
+header .menu-toggle {
+    display: none;
 }
