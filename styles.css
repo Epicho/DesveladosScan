@@ -25,7 +25,7 @@ header .logo{
 }
 
 head .logo-text {
-    margin: 4px;
+    margin: 2px;
 }
 
 header ul {
@@ -33,16 +33,41 @@ header ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    border: 1px solid red;
 }
 
 header ul li {
     float: left;
     position: relative;
-}
+ }
 
 header ul li ul {
    position: absolute;
+   top: 66px;
+   right: 0px;
+   width: 150px;
+   display: none;
+}
+
+header ul li:hover ul{
+   display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: #444;
+}
+
+header ul li ul li a.logout {
+    color: red;
+}
+
+header ul li ul li a:hover {
+    background-color: #d5d6d6; 
 }
 
 header ul li a {
@@ -60,3 +85,65 @@ header ul li a:hover {
 header .menu-toggle {
     display: none;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 850px){
+    header {
+        position: relative;
+    }
+
+    header ul {
+        width: 100%;
+        background: #40467c;
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    .showing {
+        max-height: 100em;
+
+    }
+
+    header ul li{
+        width: 100%;
+        background: #40467c;
+    }
+
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+
+    header ul li ul li a {
+        padding: 10px;
+        background: #626bbd;
+        color: white;
+        padding-left: 50px;
+    }
+    
+    header ul li ul li a:hover {
+        background: #40467c;
+    }
+
+    header ul li ul li a.logout {
+        color: red;
+    }
+
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 2em;
+    }
+
+    header .logo{
+        float: left;
+        height: inherit;
+        margin-left: 0.5em;
+    }
+    
+}
+
