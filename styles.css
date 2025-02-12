@@ -22,6 +22,68 @@ a {
     color: inherit;
 }
 
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background-color: #626bbd;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 1.08em;
+    font-family: 'Lora', serif;
+}
+
+.btn-big {
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+}
+
+.btn:hover {
+    color: white !important;
+    background: #40467c;
+}
+
+.text-input {
+    padding: .7rem .1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    color: #444;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+
+}
+
+.msg {
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.success {
+    color: #3a6e3a;
+    border: 1px solid #3a6e3a;
+    background-color: #bcf5bc;
+}
+
+.success {
+    color: #884b4b;
+    border: 1px solid #884b4b;
+    background-color: #f5bcbc;
+}
+
+/* Navbar */
+
 header{
     background-color: #2F324C;
     height: 66px;
@@ -173,6 +235,38 @@ header .menu-toggle {
     margin: 30px;
 }
 
+.content .main-content.single {
+    background: #d5d6d6;
+    padding: 20px 50px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+/* AUTH PAGES */
+.auth-content {
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #d3d3d3;
+    border-radius: 5px;
+}
+
+.auth-content form .formTitle{
+    text-align: center;
+}
+
+.auth-content form div  {
+    margin-bottom: 10px;
+}
+
+.auth-content form p {
+    text-align: center;
+}
+
+.auth-content form p a {
+    text-decoration: underline;
+}
+
 /* FOOTER */
 .footer {
     background-color: #2F324C;
@@ -182,7 +276,6 @@ header .menu-toggle {
 }
 
 .footer .footerContent {
-    border: 1px solid red;
     height: 250px;
     display: flex;
     
