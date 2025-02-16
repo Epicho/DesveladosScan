@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lector de Manga</title>
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .reader {
+            padding: 20px;
+        }
+
+        .title, .capNum {
+            margin: 10px 0;
+        }
+
+        /* Contenedor de modo cascada */
+        .manga-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .manga-container img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="reader">
+        <h1 class="title">Título del Manga</h1>
+        <h2 class="capNum">Capítulo 1</h2>
+    </div>
+
+    <!-- Contenedor de imágenes (modo cascada) -->
+    <div class="manga-container" id="cascada"></div>
+
+    <!-- Script -->
+    <script src="scriptReader.js"></script>
+</body>
+</html>
