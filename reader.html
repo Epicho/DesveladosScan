@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02a95cd249.js" crossorigin="anonymous"></script>
+
+    <!-- Family Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Slick Carousel-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+
+    
+</head>
+<body>
+    <header>
+        <div class = "logo">
+            <h1 class="logo-text">DesveladosScan</h1>   
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="#">BIBLIOTECA</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="register.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Usuario
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul>
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+        
+        <!-- Titulos -->
+        <div class="top">
+            <h1 class="title">Título</h1>
+            <h2 class="chapNum">Capítulo X</h2>
+            
+        </div>
+
+        <!-- Opciones -->
+        <div class="opciones">
+            <button class="btn" onclick="ToggleMode()">Cambiar modo de Lectura </button>
+        </div>
+        
+
+        <!-- Reader -->
+        <!-- Cascada -->
+        <div class="cascada" id="cascada">
+            
+            
+        </div>
+        
+    </div>        
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footerContent">
+            <div class="footerSection about">
+                <h1 class="logo-text">DesveladosScan</h1>
+                <p>
+                    Somos un pequeño scanlation en desarrollo.
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-envelope"></i> &nbsp; desveladosscan@gmail.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            &copy; desveladosscan.com | Designed by Starstrial
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="scriptReader.js"></script>
+
+    </body>
+</html>
